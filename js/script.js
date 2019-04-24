@@ -17,6 +17,20 @@ var quotes = [
     quote: "Hate is too great a burden to bear. It injuries the hater more than it injures the hated",
     source: "-Coretta Scott King",
   },
+
+  {
+    quote: "The cost of liberty is less than the price of repression",
+    source: "—W.E.B. Du Bois"
+  },
+  {
+    quote: "Defining myself, as opposed to being defined by others, is one of the most difficult challenges I face",
+    source: "-Carol Moseley-Braun, politician and lawyer"
+  },
+  {
+    quote: "One day our descendants will think it incredible that we paid so much attention to things like the amount of melanin in our skin or the shape of our eyes or our gender instead of the unique identities of each of us as complex human beings",
+    source: "-Franklin Thomas, activist, philanthropist, and former president of the Ford Foundation",
+  },
+
   {
     quote: "Our deepest fear is not we are inadequate, Our deepest fear is that we are powerful beyond measure. It is our light, not our darkness That most frightens us.",
     source: "-Marianne Williamson",
