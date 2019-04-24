@@ -1,11 +1,5 @@
-/******************************************
-Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
-******************************************/
 
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
-
-//Array of quotes
+//Make an Array of African American quotes
 var quotes = [
   {
     quote: "Never be limited by other people's limited imaginations",
@@ -32,7 +26,7 @@ var quotes = [
  ];
 
 
-//Generate a random number, use number to return random quote from array
+//Produce a random number, use this random number to print out to screen random quote from array
 function getRandomQuote() {
  var randomQuote = Math.floor(Math.random() * quotes.length); //Selects random quote
  return quotes[randomQuote]; //Returns random quote
@@ -44,7 +38,7 @@ function printQuote() {
  var html = "<p class='quote'>" + showQuote.quote + "</p>";
  html += "<p class='source'>" + showQuote.source + "</p>";
 
-//Prints optional properities in quote array
+//Prints optional properities in quote array like citation or year
  if ("citation" in showQuote) {
    html += "<span class='citation'>" + showQuote.citation + "</span>";
  }
@@ -53,7 +47,7 @@ function printQuote() {
    html += "<span class='year'>" + showQuote.year + "</span>";
  }
 
-//Sets innerHTML of 'quote-box' div to the HTML string
+//Sets innerHTML of  the DIV 'quote-box'  to the HTML string
  document.getElementById("quote-box").innerHTML = html;
 }
 
@@ -64,34 +58,4 @@ printQuote();
 //When the button is clicked, the event listener will call printQuote function
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
  
- //Generate a random number, use number to return random quote from array
- function getRandomQuote() {
-  var randomQuote = Math.floor(Math.random() * quotes.length); //Selects random quote
-  return quotes[randomQuote]; //Returns random quote
- };
  
- //Calls getRandomQuote function
- function printQuote() {
-  var showQuote = getRandomQuote();
-  var html = "<p class='quote'>" + showQuote.quote + "</p>";
-  html += "<p class='source'>" + showQuote.source + "</p>";
- 
- //Prints optional properities in quote array
-  if ("citation" in showQuote) {
-    html += "<span class='citation'>" + showQuote.citation + "</span>";
-  }
- 
-  if ("year" in showQuote) {
-    html += "<span class='year'>" + showQuote.year + "</span>";
-  }
- 
- //Sets innerHTML of 'quote-box' div to the HTML string
-  document.getElementById("quote-box").innerHTML = html;
- }
- 
- //Runs printQuote function to print quotes to the page
- printQuote();
- 
- 
- //When the button is clicked, the event listener will call printQuote function
- document.getElementById('loadQuote').addEventListener("click", printQuote, false);
